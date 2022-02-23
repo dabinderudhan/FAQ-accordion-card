@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/dabinderudhan/FAQ-accordion-card)
-- Live Site URL: [live URL](https://your-live-site-url.com)
+- Live Site URL: [live URL](https://dabinderudhan.github.io/FAQ-accordion-card/)
 
 ## My process
 
