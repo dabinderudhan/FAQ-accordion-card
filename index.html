@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+    <!-- JS file -->
+    <script defer src="./index.js"></script>
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body class="flex flex-col">
+    <main class="faq-card grid">
+      <div class="faq-imgwrapper">
+        <img
+          class="faq-imgwrapper--image"
+          src="./images/illustration-woman-online-mobile.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          class="faq-imgwrapper--imagebox"
+          src="./images/illustration-box-desktop.svg"
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
+      <div class="faq-container flex flex-col">
+        <h1 class="faq-title">faq</h1>
+        <article class="question">
+          <div class="question-title flex">
+            <p>How many team members can I invite?</p>
+            <button type="button" class="question-btn">
+              <span class="question-btn--up"
+                ><img src="./images/icon-arrow-up.svg" alt=""
+              /></span>
+              <span class="question-btn--down"
+                ><img src="./images/icon-arrow-down.svg" alt=""
+              /></span>
+            </button>
+          </div>
+          <div class="question-text">
+            <p>
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </div>
+        </article>
+
+        <article class="question">
+          <div class="question-title flex">
+            <p>What is the maximum file upload size?</p>
+            <button type="button" class="question-btn">
+              <span class="question-btn--up"
+                ><img src="./images/icon-arrow-up.svg" alt=""
+              /></span>
+              <span class="question-btn--down"
+                ><img src="./images/icon-arrow-down.svg" alt=""
+              /></span>
+            </button>
+          </div>
+          <div class="question-text">
+            <p>
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+          </div>
+        </article>
+
+        <article class="question">
+          <div class="question-title flex">
+            <p>How do I reset my password?</p>
+            <button type="button" class="question-btn">
+              <span class="question-btn--up"
+                ><img src="./images/icon-arrow-up.svg" alt=""
+              /></span>
+              <span class="question-btn--down"
+                ><img src="./images/icon-arrow-down.svg" alt=""
+              /></span>
+            </button>
+          </div>
+          <div class="question-text">
+            <p>
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </div>
+        </article>
+
+        <article class="question">
+          <div class="question-title flex">
+            <p>Can I cancel my subscription?</p>
+            <button type="button" class="question-btn">
+              <span class="question-btn--up"
+                ><img src="./images/icon-arrow-up.svg" alt=""
+              /></span>
+              <span class="question-btn--down"
+                ><img src="./images/icon-arrow-down.svg" alt=""
+              /></span>
+            </button>
+          </div>
+          <div class="question-text">
+            <p>
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
+          </div>
+        </article>
+
+        <article class="question">
+          <div class="question-title flex">
+            <p>Do you provide additional support?</p>
+            <button type="button" class="question-btn">
+              <span class="question-btn--up"
+                ><img src="./images/icon-arrow-up.svg" alt=""
+              /></span>
+              <span class="question-btn--down"
+                ><img src="./images/icon-arrow-down.svg" alt=""
+              /></span>
+            </button>
+          </div>
+          <div class="question-text">
+            <p>
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/dabinderudhan" target="_blank"
+        >Dabinder Udhan</a
+      >.
+    </footer>
+  </body>
+</html>

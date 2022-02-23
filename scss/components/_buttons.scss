@@ -1,0 +1,10 @@
+.question-btn {
+  background: none;
+  border: none;
+  align-self: start;
+  cursor: pointer;
+
+  &--up {
+    display: none;
+  }
+}

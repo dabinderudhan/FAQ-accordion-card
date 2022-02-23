@@ -1,0 +1,121 @@
+.faq {
+  &-card {
+    width: calc(375px - 3rem);
+    grid-template-rows: min-content, 1fr;
+    background-color: $color-white;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  &-container {
+    padding: 7rem 1.5rem 3rem;
+    align-items: start;
+    width: 100%;
+    background-image: url(../images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    // gap: 1rem;
+  }
+
+  &-imgwrapper {
+    justify-self: center;
+    width: 75%;
+    position: absolute;
+    top: -110px;
+    left: 40px;
+    display: block;
+
+    &--imagebox {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .faq {
+    &-card {
+      width: 900px;
+      height: 450px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-container {
+      height: 100%;
+      background-image: none;
+      // justify-content: center;
+      padding: 3rem 2rem 3rem 2rem;
+      justify-content: start;
+    }
+
+    &-imgwrapper {
+      position: initial;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      align-self: center;
+      background-image: url("../images/bg-pattern-desktop.svg");
+      background-size: 180%;
+      background-repeat: no-repeat;
+      background-position: right 90px bottom -130px;
+
+      &--image {
+        position: absolute;
+        top: 50px;
+        width: 50%;
+        content: url("../images/illustration-woman-online-desktop.svg");
+        object-position: -80px;
+      }
+
+      &--imagebox {
+        display: inline-block;
+        position: absolute;
+        top: 165px;
+        left: -95px;
+      }
+    }
+
+    &-title {
+      align-self: start;
+      justify-self: start;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.question {
+  width: 100%;
+  border-bottom: 1px solid $color-dividers;
+  padding: 1rem 0;
+
+  &-title {
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  &-text {
+    padding-top: 0.5rem;
+    width: 90%;
+    display: none;
+  }
+}
+
+.show-text {
+  & .question-title {
+    color: $color-text-primaryDark;
+    font-weight: $fw-bold;
+  }
+
+  & .question-text {
+    display: block;
+  }
+
+  & .question-btn--up {
+    display: inline;
+  }
+
+  & .question-btn--down {
+    display: none;
+  }
+}
