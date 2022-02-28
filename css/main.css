@@ -74,7 +74,8 @@ body {
   grid-template-rows: min-content, 1fr;
   background-color: #fff;
   border-radius: 20px;
-  position: relative; }
+  position: relative;
+  margin-top: 4rem; }
 
 .faq-container {
   padding: 7rem 1.5rem 3rem;
