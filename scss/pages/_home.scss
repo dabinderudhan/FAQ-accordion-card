@@ -92,6 +92,11 @@
   &-title {
     justify-content: space-between;
     cursor: pointer;
+
+    & h3 {
+      font-size: $fs-question;
+      font-weight: 400;
+    }
   }
 
   &-text {

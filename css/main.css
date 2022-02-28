@@ -135,6 +135,9 @@ body {
   .question-title {
     justify-content: space-between;
     cursor: pointer; }
+    .question-title h3 {
+      font-size: 0.8125rem;
+      font-weight: 400; }
   .question-text {
     padding-top: 0.5rem;
     width: 90%;
