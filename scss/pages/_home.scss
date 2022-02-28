@@ -92,11 +92,6 @@
   &-title {
     justify-content: space-between;
     cursor: pointer;
-
-    &--heading {
-      font-size: $fs-question;
-      font-weight: 400;
-    }
   }
 
   &-text {
@@ -108,8 +103,10 @@
 
 .show-text {
   & .question-title {
-    color: $color-text-primaryDark;
-    font-weight: $fw-bold;
+    &--heading {
+      color: $color-text-primaryDark;
+      font-weight: $fw-bold;
+    }
   }
 
   & .question-text {

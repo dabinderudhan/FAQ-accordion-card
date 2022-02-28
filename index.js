@@ -2,12 +2,21 @@ const questions = document.querySelectorAll(".question");
 
 questions.forEach(function (question) {
   const questionBtn = question.querySelector(".question-btn");
+  const questionTitle = question.querySelector(".question-title--heading");
 
   questionBtn.addEventListener("click", function () {
-    question.classList.toggle("show-text");
+    toggleClass(question);
+  });
 
-    questions.forEach(function (item) {
-      if (item !== question) item.classList.remove("show-text");
-    });
+  questionTitle.addEventListener("click", function () {
+    toggleClass(question);
   });
 });
+
+function toggleClass(quest) {
+  quest.classList.toggle("show-text");
+
+  questions.forEach(function (item) {
+    if (item !== quest) item.classList.remove("show-text");
+  });
+}

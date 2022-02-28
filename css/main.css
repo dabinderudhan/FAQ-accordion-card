@@ -23,11 +23,15 @@ body {
   font-weight: 700;
   color: #1d1e35; }
 
-.question-title {
+.question-title--heading {
   font-size: 0.8125rem;
+  font-weight: 400;
   color: #4a4b5e; }
-  .question-title:hover {
+  .question-title--heading:hover {
     color: #f47c57; }
+
+.question-title:hover {
+  color: #f47c57; }
 
 .question-btn {
   background: none;
@@ -135,15 +139,12 @@ body {
   .question-title {
     justify-content: space-between;
     cursor: pointer; }
-    .question-title h2 {
-      font-size: 0.8125rem;
-      font-weight: 400; }
   .question-text {
     padding-top: 0.5rem;
     width: 90%;
     display: none; }
 
-.show-text .question-title {
+.show-text .question-title--heading {
   color: #1d1e35;
   font-weight: 700; }
 

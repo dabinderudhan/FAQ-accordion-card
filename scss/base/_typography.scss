@@ -18,10 +18,15 @@ body {
 
 .question {
   &-title {
-    font-size: $fs-question;
+    &--heading {
+      font-size: $fs-question;
+      font-weight: 400;
+      color: $color-text-neutralDark;
 
-    color: $color-text-neutralDark;
-
+      &:hover {
+        color: $color-text-primaryLight;
+      }
+    }
     &:hover {
       color: $color-text-primaryLight;
     }
